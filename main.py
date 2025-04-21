@@ -40,7 +40,7 @@ st.markdown("""
 # -------------------- Core Logic --------------------
 
 class Calculator:
-    def _init(self):  # Fixed __init_
+    def __init__(self):  # ✅ fixed constructor
         self.expression = ""
 
     def perform_operation(self, a, b, operator):
@@ -82,7 +82,7 @@ class Calculator:
             return f"Error: {e}"
 
 class CalculatorUI:
-    def _init(self, calculator):  # Fixed __init_
+    def __init__(self, calculator):  # ✅ fixed constructor
         self.calculator = calculator
         if "expression" not in st.session_state:
             st.session_state.expression = ""
@@ -131,3 +131,4 @@ calculator = Calculator()
 ui = CalculatorUI(calculator)
 ui.display_calculator_buttons()
 ui.display_input_and_result()
+
