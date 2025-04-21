@@ -8,7 +8,7 @@ st.set_page_config(page_title="Mouse_Based Calculator", layout="centered")
 st.markdown("""
     <style>
         .stApp {
-            background: linear-gradient(to bottom right, #a8edea, #fed6e3);
+            background: linear-gradient(to right, #2b5876, #4e4376);
         }
         .calculator-button {
             font-size: 30px;
@@ -34,7 +34,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 st.markdown("""
-    <h1 style="text-align: center; color: brown;">You are Welcome <br></h1>
+    <h1 style="text-align: center; color: #ffffff;">Here is my Calculator with the Change Color Feature</h1>
 """, unsafe_allow_html=True)
 
 # -------------------- Core Logic --------------------
@@ -131,4 +131,5 @@ calculator = Calculator()
 ui = CalculatorUI(calculator)
 ui.display_calculator_buttons()
 ui.display_input_and_result()
+
 
