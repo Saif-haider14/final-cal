@@ -34,7 +34,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 st.markdown("""
-    <h1 style="text-align: center; color: #ffffff;">Here is my Calculator with the Change Color Feature</h1>
+    <h1 style="text-align: center; color: #ffffff;">Here is my Calculator</h1>
 """, unsafe_allow_html=True)
 
 # -------------------- Core Logic --------------------
